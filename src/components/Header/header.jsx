@@ -11,7 +11,7 @@ export default function Header() {
             <div className="header_left">
                 <div className="logotype">
                     <h2>Next Buy</h2>
-                    <MdLocalOffer className="icon"/>                 
+                    <MdLocalOffer size={20}/>                 
                 </div>
 
                 <div className="menu">
