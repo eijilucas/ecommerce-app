@@ -1,0 +1,34 @@
+.navigation {
+    width: 100%;
+    background: var(--bg-header-color);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 30px;
+
+    a {
+        text-decoration: none;
+        color: var(--base-color);
+    }
+
+    .navigation_right {
+        display: flex;
+        gap: 10px;
+    }
+
+    .account, .order_status {
+        display: flex;
+        align-items: center;
+    }
+
+    .account_text {
+        padding: 0 0 0 6px;
+    }
+
+    button {
+        background: none;
+        border: none;
+        color: var(--base-color);
+        cursor: pointer;
+    }
+
+}
