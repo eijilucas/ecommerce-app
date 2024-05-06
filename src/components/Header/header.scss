@@ -1,0 +1,25 @@
+.header {
+    width: 100%;
+    background: var(--bg-header-color);
+    color: var(--base-color);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+
+    border-bottom: 3px solid var(--color-light-blue);
+
+    .header_left {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+    }
+    
+    .logotype {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+}
