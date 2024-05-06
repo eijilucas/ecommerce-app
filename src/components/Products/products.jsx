@@ -9,7 +9,7 @@ export default function Products() {
     const { products, setProducts } = useContext(AppContext);
 
     useEffect(() => {
-        fetchProducts("eletrônicos").then((response) => setProducts(response))
+        fetchProducts("celulares").then((response) => setProducts(response))
     // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
 
