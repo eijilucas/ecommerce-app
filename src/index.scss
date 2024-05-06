@@ -1,17 +1,27 @@
 @import url(https://db.onlinewebfonts.com/c/f394894fe9d2c0473c80ab24dd9bcda5?family=Human+BBY+Web);
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Human BBY Web", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Human BBY Web", sans-serif;
 }
 
 :root {
-    --color-blue: #0046be;
-    --color-white: #fff;
-    --color-light-blue: #2b5df5;
-    --color-yellow: #fff200;
-    --color-black: #000;
-    --color-light-grey: #ddd;
+  --color-blue: #0046be;
+  --color-white: #fff;
+  --color-light-blue: #2b5df5;
+  --color-yellow: #fff200;
+  --color-black: #000;
+  --color-light-grey: #ddd;
+  --color-gray: #f2f2f2;
+}
+
+body {
+  background: var(--color-gray);
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
 }

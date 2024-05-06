@@ -4,11 +4,11 @@ export const AppContext = createContext();
 
 export const AppProvider = ( {children} ) => {
 
-    const [searchValue, setSearchValue] = useState("")
+    const [products, setProducts] = useState([])
 
     const value = {
-        searchValue,
-        setSearchValue
+        products,
+        setProducts
     }
 
     return (
