@@ -1,0 +1,25 @@
+.cart_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:5px;
+    color: var(--base-color);
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.cart_status {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0;
+    right: 0;
+    background: var(--color-yellow);
+    color: var(--color-black);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
