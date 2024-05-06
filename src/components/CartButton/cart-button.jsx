@@ -5,12 +5,12 @@ import { AppContext } from "../../contexts/AppContext";
 
 export default function CartButton() {
 
-  const { isCartVisible, setIsCartVisible } = useContext(AppContext);
+  const { isCartVisible, setIsCartVisible, cartItems } = useContext(AppContext);
 
   return (
     <button className="cart_btn" onClick={()=> setIsCartVisible(!isCartVisible)}>
       <BsCart3 size={30} stroke="2" />
-      <span className="cart_status">1</span>
+      <span className="cart_status">{cartItems.length}</span>
     </button>
   );
 }

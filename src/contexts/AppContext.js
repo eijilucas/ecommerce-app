@@ -6,12 +6,15 @@ export const AppProvider = ( {children} ) => {
 
     const [products, setProducts] = useState([]);
     const [isCartVisible, setIsCartVisible] = useState(true);
+    const [cartItems, setCartItems] = useState([]);
 
     const value = {
         products,
         setProducts,
         isCartVisible,
-        setIsCartVisible
+        setIsCartVisible,
+        cartItems,
+        setCartItems
     }
 
     return (
