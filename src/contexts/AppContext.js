@@ -4,11 +4,14 @@ export const AppContext = createContext();
 
 export const AppProvider = ( {children} ) => {
 
-    const [products, setProducts] = useState([])
+    const [products, setProducts] = useState([]);
+    const [isCartVisible, setIsCartVisible] = useState(true);
 
     const value = {
         products,
-        setProducts
+        setProducts,
+        isCartVisible,
+        setIsCartVisible
     }
 
     return (
