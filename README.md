@@ -9,6 +9,7 @@ This application provides some functionalities like:
 
 1. Buyers can find your products by brands or categories.
 2. Login system validation for their customers.
+3. Checkout system
 
 ## Requirements
 - Node v18.12.0 LTS or v20.9.0 LTS (recommended)
