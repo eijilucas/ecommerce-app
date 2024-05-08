@@ -7,12 +7,14 @@ import fetchProducts from '../../api/FetchProducts';
 export default function SearchBar() {
 
     const [searchValue, setSearchValue] = useState("");
-    const { setProducts } = useContext(AppContext);
+    const { setProducts, setLoading } = useContext(AppContext);
 
     const handleSearch = async (e) => {
         e.preventDefault();
+        setLoading(true);
         const products = await fetchProducts(searchValue);
         setProducts(products)
+        setLoading(false);
         setSearchValue("")
     }
 
