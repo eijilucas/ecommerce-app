@@ -3,14 +3,16 @@ import Header from "./components/Header/header";
 import Products from "./components/Products/products";
 
 import { AppProvider } from "./contexts/AppContext";
+import RouteApp from "./routes/RouteApp";
 
 function App() {
   return (
     <div className="App">
       <AppProvider>
-        <Header/>
-        <Products/>
-        <Cart/>
+          <RouteApp/>
+          <Header />
+          <Products />
+          <Cart />
       </AppProvider>
     </div>
   );
