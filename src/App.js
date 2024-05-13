@@ -3,17 +3,20 @@ import Header from "./components/Header/header";
 import Products from "./components/Products/products";
 
 import { AppProvider } from "./contexts/AppContext";
+import { AuthProvider } from "./contexts/AuthContext";
 import RouteApp from "./routes/RouteApp";
 
 function App() {
   return (
     <div className="App">
-      <AppProvider>
-          <RouteApp/>
+      <AuthProvider>
+        <AppProvider>
+          <RouteApp />
           <Header />
           <Products />
           <Cart />
-      </AppProvider>
+        </AppProvider>
+      </AuthProvider>
     </div>
   );
 }
