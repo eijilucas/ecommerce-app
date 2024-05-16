@@ -8,17 +8,17 @@
 
     .content {
         width: 500px;
-        height: 300px;
         background: var(--color-white);
         border-radius: 10px;
         display: flex;
         flex-direction: column;
         padding: 20px;
         justify-content: space-between;
+        gap: 20px;
     }
 
     .title {
-        text-align: center;
+        text-align: start;
         font-size: 2rem;
     }
 
@@ -36,6 +36,15 @@
         border: none;
         outline: none;
         background: var(--color-light-grey)
+    }
+
+    .error_span {
+        color: red;
+    }
+
+    .login_link {
+        cursor: pointer;
+        color: var(--color-blue)
     }
 
     button {
