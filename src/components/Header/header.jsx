@@ -5,8 +5,18 @@ import SearchBar from "../SearchBar/search-bar";
 import CartButton from "../CartButton/cart-button";
 import { FaRegCircleUser } from "react-icons/fa6";
 import { RiArrowDropDownLine } from "react-icons/ri";
+import { useState } from "react";
+import { FaRegUserCircle } from "react-icons/fa";
+import { MdOutlineExitToApp } from "react-icons/md";
 
 export default function Header() {
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleDropdown = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <section className="top_section">
       <div className="header">
@@ -36,11 +46,17 @@ export default function Header() {
             </div>
 
             <div className="navigation_right">
-                <button type="button" className="account">
+                <button type="button" className="account" onClick={toggleDropdown}>
                     <FaRegCircleUser size={20}/>
                     <span className="account_text">Account</span>
                     <RiArrowDropDownLine size={20}/>
                 </button>
+                {isOpen && (
+                  <ul className="dropdown_menu">
+                    <li className="dropdown_item"><FaRegUserCircle/>Meu perfil</li>
+                    <li className="dropdown_item"><MdOutlineExitToApp/>Sair da conta</li>
+                  </ul>
+                )}
                 
                 <button type="button" className="order_status">
                     <span>Order Status</span>

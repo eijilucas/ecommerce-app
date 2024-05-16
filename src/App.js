@@ -1,6 +1,3 @@
-import Cart from "./components/Cart/cart";
-import Header from "./components/Header/header";
-import Products from "./components/Products/products";
 
 import { AppProvider } from "./contexts/AppContext";
 import { AuthProvider } from "./contexts/AuthContext";
@@ -12,9 +9,6 @@ function App() {
       <AuthProvider>
         <AppProvider>
           <RouteApp />
-          <Header />
-          <Products />
-          <Cart />
         </AppProvider>
       </AuthProvider>
     </div>

@@ -58,6 +58,7 @@ export default function Login() {
               const decoded = jwtDecode(credentialResponse.credential);
                 setEmail(decoded.email);
                 setPassword(decoded.sub);
+                navigate("/home")
             }}
             onError={() => {
               console.log("Login Failed");
